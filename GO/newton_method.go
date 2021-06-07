@@ -6,7 +6,7 @@ import (
 )
 
 func Sqrt(x float64) float64 {
-	var min float64 = 1 << 10;
+	var min float64 =math.MaxFloat64
 	var z float64 =1;
   
 	for cnt:=0; cnt < 10; cnt++ {
