@@ -6,11 +6,11 @@ import (
 )
 
 func Sqrt(x float64) float64 {
-	var min float64 =math.MaxFloat64
-	var z float64 =1;
-  
-	for cnt:=0; cnt < 10; cnt++ {
-		z -= (math.Pow(z, 2) - x)/(2*z)
+	var min float64 = math.MaxFloat64
+	var z float64 = 1
+
+	for cnt := 0; cnt < 10; cnt++ {
+		z -= (math.Pow(z, 2) - x) / (2 * z)
 		z = math.Abs(z)
 		if z < min {
 			min = z
@@ -19,9 +19,7 @@ func Sqrt(x float64) float64 {
 	return z
 }
 
- 
-
 func main() {
-	fmt.Println(Sqrt(77))
-	fmt.Println(math.Sqrt(77))
+	fmt.Println(Sqrt(7))
+	fmt.Println(math.Sqrt(7))
 }
